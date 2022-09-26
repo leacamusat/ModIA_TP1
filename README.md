@@ -28,4 +28,27 @@ Sur la PCA/T-SNE des features (obtenir en sortie de la structure de convolution 
 
 
 ## Gcloud comment copier un dossier dans le repository de Google Cloud, pour lancer un Docker
-gcloud compute scp --recurse ModIA_TP1 lea:Workspace/ --zone "europe-west1-b"
+
+1) activer l'instance sur Gcloud 
+
+OUVRIR UN TERMINAL EN LOCAL
+
+2) copier la commande avec ssh dans un terminal (apparait en vert, on est sur la machine distante)
+
+gcloud compute ssh --zone "europe-west1-b" "lea"  --project "ai-frameworks-2022-2023"
+
+On est maintenant sur le terminal à distance 
+
+mkdir Workspace 
+
+cd Workspace 
+
+OUVRIR UN AUTRE TERMINAL LOCAL 
+
+3)sur un terminal LOCAL gcloud compute scp --recurse ModIA_TP1 lea:Workspace/ --zone "europe-west1-b" ##copier tout le repositoy à distance 
+
+SUIVRE LE TP DANS LE TERMINAL DISTANT
+
+#créer une image 
+
+sudo docker build -t image_s1 .
