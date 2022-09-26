@@ -58,3 +58,13 @@ sudo docker build -t image_s1 .
 sudo docker image ls
 
 docker run -it --name contain_s1 image_s1
+
+#tester la version de python pyTorch
+
+python 
+
+import torch 
+
+print(torch.__version__)
+
+Ctrl+d
