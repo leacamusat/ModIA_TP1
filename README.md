@@ -54,3 +54,7 @@ SUIVRE LE TP DANS LE TERMINAL DISTANT
 #créer une image 
 
 sudo docker build -t image_s1 .
+
+sudo docker image ls
+
+docker run -it --name contain_s1 image_s1
