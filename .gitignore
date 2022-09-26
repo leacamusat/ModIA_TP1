@@ -1,2 +1,15 @@
 /__pycache__
 /data
+runs/MNIST/events.out.tfevents.1664185347.insa-12601.34703.0
+runs/MNIST/events.out.tfevents.1664185735.insa-12601.36791.0
+runs/MNIST/events.out.tfevents.1664185912.insa-12601.38525.0
+runs/MNIST/events.out.tfevents.1664185949.insa-12601.38988.0
+runs/MNIST/events.out.tfevents.1664186198.insa-12601.40248.0
+runs/MNIST/events.out.tfevents.1664186261.insa-12601.40920.0
+flagged/output/tmpyqnyofw5.json
+flagged/image/tmpg2lxu00t.png
+runs/MNIST/00001/default/sprite.png
+runs/MNIST/00001/default/tensors.tsv
+runs/MNIST/00001/default/metadata.tsv
+runs/MNIST/projector_config.pbtxt
+flagged/log.csv
