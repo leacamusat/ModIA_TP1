@@ -45,7 +45,9 @@ cd Workspace
 
 OUVRIR UN AUTRE TERMINAL LOCAL 
 
-3)sur un terminal LOCAL gcloud compute scp --recurse ModIA_TP1 lea:Workspace/ --zone "europe-west1-b" ##copier tout le repositoy à distance 
+3)sur un terminal LOCAL 
+
+gcloud compute scp --recurse ModIA_TP1 lea:Workspace/ --zone "europe-west1-b" ##copier tout le repositoy à distance 
 
 SUIVRE LE TP DANS LE TERMINAL DISTANT
 
