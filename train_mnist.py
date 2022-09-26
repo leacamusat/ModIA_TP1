@@ -81,7 +81,7 @@ if __name__=='__main__':
   net = MNISTNet() #instanciation du modèle
   # setting net on device(GPU if available, else CPU)
   net = net.to(device)
-  optimizer = optim.SGD(net.parameters(), lr=lr) #les paramètres sont les poids et biais et sont implicites
+  optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9) #les paramètres sont les poids et biais et sont implicites
   
   writer = SummaryWriter(f'runs/MNIST')
   train(net, optimizer, trainloader, writer, epochs)
@@ -90,7 +90,7 @@ if __name__=='__main__':
   torch.save(net.state_dict(), "mnist_net.pth")
   #add embeddings to tensorboard
   perm = torch.randperm(len(trainset.data)) 
-  images, labels = trainset.data[perm][:256], trainset.targets[perm][:256]
+  images, labels = trainset.data[perm][:50], trainset.targets[perm][:50]
   images = images.unsqueeze(1).float().to(device)
   with torch.no_grad():
     embeddings = net.get_features(images)
