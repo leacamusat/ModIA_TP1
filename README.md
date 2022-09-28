@@ -57,6 +57,8 @@ sudo docker build -t image_s1 .
 
 sudo docker image ls
 
+#run le first container 
+
 docker run -it --name contain_s1 image_s1
 
 #tester la version de python pyTorch
@@ -68,3 +70,16 @@ import torch
 print(torch.__version__)
 
 Ctrl+d
+
+
+sudo docker start contain_s1
+
+#have access to its interactive mode using the attach command
+
+sudo docker attach contain_s1
+
+----------------------------------------------------------------------
+
+#commande pour créér un conteneur, mettre les fichiers dedans et le lancer en mode interactif. Créer un dossier Modia_TP1_container quand on fait un ls 
+
+docker run -it --name contain_s4 -v ~/Workspace/ModIA_TP1:/workspace/Modia_TP1_container image_s1
